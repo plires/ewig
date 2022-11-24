@@ -139,7 +139,7 @@ header nav #btn_menu_products i.rotate {
 }
 
 header nav i {
-	margin-left: 10px;
+	margin-left: 3px;
 }
 
 @keyframes rotation_down {
