@@ -3,6 +3,7 @@
 	require ('includes/config.inc.php');
 	require ('includes/get-variable-handling.php');
   $current = 'home';
+  $product = 'producto_3';
 
 ?>
 
@@ -31,7 +32,8 @@
 		<!-- Header -->
 		<?php include_once('./includes/header.php'); ?>
 
-		<div class="container">
+		<!-- Slide -->
+		<div class="container slide">
 			<div class="row">
 				<div class="col-md-12">
 					<h1>HOME</h1>
@@ -41,6 +43,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- Slide end -->
 
 
 	</section>

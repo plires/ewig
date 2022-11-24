@@ -5,6 +5,8 @@
 /vendor
 /videos
 /img
+/dist
+/dist/
 **/.DS_Store into
 
 #text editors

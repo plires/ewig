@@ -3,8 +3,16 @@ import AOS from 'aos';
 const header = document.getElementsByTagName('header')[0]
 const nav = document.getElementsByTagName('nav')[0]
 const toggle = document.getElementById('btn_menu')
+const btnMenuProducts = document.getElementById('btn_menu_products')
+const contentProducts = document.getElementById('content_products')
+const arrowProduct = document.getElementById('arrow_product')
 
 AOS.init()
+
+btnMenuProducts.addEventListener('click', function(){
+	contentProducts.classList.toggle('open')
+	arrowProduct.classList.toggle('rotate')
+});
 
 
 toggle.addEventListener('click', function(){
@@ -27,14 +35,13 @@ function menuToggle() {
 /*HABILITAR ESTA FUNCION PARA QUE EL HEADER APAREZCA Y DESAPAREZCA EN FUNCION
 DEL SCROLL HACIA ARRIBA O ABAJO
 */
-var scrollVar = -400;
+var scrollVar = -80;
 window.addEventListener('scroll', function() {
-
-
 	if ( document.body.getBoundingClientRect().top >= scrollVar )
 		showlHeader()
-	else
+	else {
 		hidelHeader()
+	}
 });
 
 function showlHeader() {
