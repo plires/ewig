@@ -2,53 +2,43 @@
 
 	<input name="origin" type="hidden" value="Formulario de Contacto">
 
-	<div class="inputBox">
-  	<input 
-  		required="required" 
-  		type="text" 
-  		name="name" 
-  		value="<?= $name ?>">
-  		<span>Nombre *</span>
-  		<i></i>
-  		<div class="invalid-feedback">
-        Ingresá tu nombre
-      </div>
-	</div>
+	<input 
+		class="form-control"
+		required="required" 
+		type="text" 
+		name="name" 
+		placeholder="nombre"
+		value="<?= $name ?>">
+	<div class="invalid-feedback">
+    Ingresá tu nombre
+  </div>
 
-	<div class="inputBox">
-  	<input 
-  		required="required" 
-  		type="email" 
-  		name="email" 
-  		value="<?= $email ?>">
-  		<span>Email *</span>
-  		<i></i>
-  		<div class="invalid-feedback">
-        Ingresá tu email
-      </div>
-	</div>
+	<input 
+		class="form-control"
+		required="required" 
+		type="email" 
+		name="email" 
+		placeholder="email"
+		value="<?= $email ?>">
+	<div class="invalid-feedback">
+    Ingresá tu email
+  </div>
 
-	<div class="inputBox">
-  	<input 
-  		required="required" 
-  		type="text" 
-  		name="phone" 
-  		value="<?= $phone ?>">
-  		<span>Teléfono *</span>
-  		<i></i>
-  		<div class="invalid-feedback">
-        Ingresá tu teléfono
-      </div>
-	</div>
+	<input 
+		class="form-control"
+		required="required" 
+		type="text" 
+		name="phone" 
+		placeholder="teléfono"
+		value="<?= $phone ?>">
+	<div class="invalid-feedback">
+    Ingresá tu teléfono
+  </div>
 
-	<div class="inputBox">
-  	<textarea required="required" name="comments"><?= $comments ?></textarea>
-  	<span>Comentarios *</span>
-  	<i></i>
-  	<div class="invalid-feedback">
-      Ingresá tu consulta
-    </div>
-	</div>
+	<textarea class="form-control" placeholder="consulta" required="required" name="comments"><?= $comments ?></textarea>
+	<div class="invalid-feedback">
+    Ingresá tu consulta
+  </div>
 
 	<div class="content_button">
 		<button type="button" id="send" class="btn btn-primary">

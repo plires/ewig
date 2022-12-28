@@ -1,6 +1,330 @@
+/* Lineas Generales */
+	.home .slide .horizontal,
+	.home .carrusel_aspiracional .horizontal,
+	.home .frase_descriptiva .horizontal,
+	.home .nuestros_sistemas .horizontal {
+		display: none;
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		left: 0;
+		bottom: 30px;
+		z-index: 2;
+	}
 
+	.home .slide .horizontal i,
+	.home .carrusel_aspiracional .horizontal i,
+	.home .frase_descriptiva .horizontal i,
+	.home .nuestros_sistemas .horizontal i {
+		position: absolute;
+	  left: 0;
+	  bottom: 0;
+	  width: 100%;
+	  height: 1px;
+	  background: white;
+	  overflow: hidden;		
+	}
 
+	.home .slide .horizontal i::before,
+	.home .carrusel_aspiracional .horizontal i::before,
+	.home .frase_descriptiva .horizontal i::before,
+	.home .nuestros_sistemas .horizontal i::before {
+		content: '';
+	  position: absolute;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: linear-gradient(90deg, var(--primary-color), #f6b1a6, var(--primary-color), #f6b1a6, var(--primary-color));
+	  animation:  animate 4s linear infinite;	
+	}
 
+	@keyframes animate {
+	  0%
+	  {
+	    background-position-x: 0;
+	  }
+	  100%
+	  {
+	    background-position-x: 1920px;
+	  }
+	}
+
+	.home .slide .vertical,
+	.home .carrusel_aspiracional .vertical,
+	.home .frase_descriptiva .vertical {
+		position: relative;
+		display: none;
+		width: 1px;
+		height: 100%;
+		position: absolute;
+		left: 23%;
+		top: 0;
+		z-index: 2;
+		background: var(--primary-color);
+	}
+	/* Lineas Generales end */
+
+/* Slide */
+.home .slide {
+	position: relative;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+.home .slide .content_slide {
+	position: relative;
+}
+
+.home .slide .carousel h2 {
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+	color: white;
+	z-index: 2;
+	text-shadow: 0 0 4px rgba(0,0,0,0.8);
+	margin-bottom: 0;
+}
+
+.home .slide .carousel h2 span {
+	font-weight: 300;
+}
+/* Slide end */
+
+/* Carrusel Aspiracional */
+.home .carrusel_aspiracional {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.home .carrusel_aspiracional h1 {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+.home .carrusel_aspiracional .content_slide_img {
+	margin-bottom: 10px;
+}
+
+.home .carrusel_aspiracional .content_frase {
+	order: 1;
+}
+
+.home .carrusel_aspiracional .content_frase br {
+	display: none;
+}
+
+.home .carrusel_aspiracional .content_frase p {
+	margin: 0;
+	text-align: center;
+}
+
+.home .carrusel_aspiracional .content_frase p span {
+	color: var(--primary-color);
+	font-style: italic;
+}
+/* Carrusel Aspiracional end */
+
+/* Frase Descriptiva */
+.home .frase_descriptiva {
+	margin-bottom: 40px;
+}
+
+.home .frase_descriptiva br {
+	display: none;
+}
+/* Frase Descriptiva end */
+
+/* Nuestros Sistemas */
+.home .nuestros_sistemas {
+	margin-bottom: 60px;
+}
+
+.home .nuestros_sistemas h2 {
+	font-size: 2rem;
+	font-weight: 300;
+	color: var(--primary-color);
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.home .nuestros_sistemas .content_productos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.home .nuestros_sistemas .content_productos .producto {
+	text-align: center;
+	max-width: 40%;
+	margin-bottom: 40px;
+}
+
+.home .nuestros_sistemas .content_productos .producto:last-child {
+	margin-bottom: 0;
+}
+
+.home .nuestros_sistemas .content_productos .producto a:hover img {
+	opacity: 0.6;
+}
+
+.home .nuestros_sistemas .content_productos .producto h3 {
+	font-size: 1.125rem;
+	margin-top: 7px;
+	margin-bottom: 0;
+	color: var(--primary-color);
+}
+/* Nuestros Sistemas end */
+
+/* Arquitectos & Distribuidores */
+.home .arq_dist {
+	background: var(--secondary-color);
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: 60px;
+}
+
+.home .arq_dist .content {
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.home .arq_dist .content:last-child {
+	margin-bottom: 0;
+}
+
+.home .arq_dist h3 {
+	font-weight: 300;
+	color: var(--primary-color);
+	font-size: 2rem;
+}
+
+.home .arq_dist .btn-primary {
+	background: transparent!important;
+}
+
+.home .arq_dist .btn-primary:hover {
+	color: white!important;
+	background: var(--primary-color)!important;
+}
+/* Arquitectos & Distribuidores end */
+
+/* Propiedades */
+.home .propiedades {
+	margin-bottom: 60px;
+}
+
+.home .content_propiedades {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.home .content_propiedades img {
+	max-width: 50%;
+}
+
+.home .content_propiedades h3 {
+	font-size: 1rem;
+	margin-top: 5px;
+}
+/* Propiedades end */
+
+/* Galería Productos */
+.home .galeria_productos {
+	background: var(--secondary-color);
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: 60px;
+}
+
+.home .galeria_productos .content_small img {
+	cursor: pointer;
+}
+
+.home .galeria_productos .content_small img:hover {
+	opacity: 0.7;
+}
+
+.home .galeria_productos .content_small .number {
+	color: var(--primary-color);
+	font-size: 0.85rem;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.home .galeria_productos .horizontal {
+	background: var(--primary-color);
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.home .galeria_productos .content_description {
+	display: flex;
+	flex-direction: column;
+	background: var(--primary-color);
+	padding: 15px;
+	color: white;
+}
+
+.home .galeria_productos .content_description #number_text {
+	position: relative;
+	margin-top: 5px;
+	margin-bottom: 3px;
+}
+
+.home .galeria_productos .content_description #number_text:before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: 0;
+	background: white;
+	height: 2px;
+	width: 15px;
+	margin-bottom: 3px;
+}
+
+.home .galeria_productos .content_description p {
+	margin-bottom: 0;
+}
+
+.home .galeria_productos .content_description p br {
+	display: none;
+}
+/* Galería Productos end */
+
+/* Info */
+.home .info {
+	border-bottom: solid 1px var(--primary-color);
+	margin-bottom: 30px;
+}
+
+.home .info .frase span {
+	font-weight: 500;
+}
+
+.home .info .frase p br {
+	display: none;
+}
+
+.home .info .flores {
+	background-image: url('../img/home/flores.gif');
+	background-repeat: no-repeat;
+	background-position: 50% 150%;
+	background-size: 350px;
+	height: 135px;
+}
+/* Info end */
+
+/* Info Adicional */
+.home .info_adicional {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.home .info_adicional .featured {
+	font-weight: 500;
+	font-size: 1.25rem;
+}
+/* Info Adicional end */
 
 
 
@@ -9,24 +333,433 @@
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
 
+	/* Slide */
+	.home .slide .carousel h2 {
+		font-size: 2.5rem;
+	}
+	/* Slide end */
+
+	/* Nuestros Sistemas */
+	.home .nuestros_sistemas .content_productos .producto {
+		max-width: 30%;
+	}
+	/* Nuestros Sistemas end */
+	
 }
 
 @media (min-width: 768px) {
+
+	/* Slide */
+	.home .content_slide {
+		padding-top: 30px;
+	}
+
+	.home .slide .carousel h2 {
+		left: 10%;
+		bottom: 14%;
+		font-size: 2.5rem;
+		line-height: 1;
+	}
+	/* Slide end */
+
+	/* Lineas Generales */
+	.home .slide .horizontal,
+	.home .carrusel_aspiracional .horizontal,
+	.home .frase_descriptiva .horizontal,
+	.home .nuestros_sistemas .horizontal {
+		display: inline-block;
+	}
+
+	.home .slide .vertical,
+	.home .carrusel_aspiracional .vertical,
+	.home .frase_descriptiva .vertical,
+	.home .frase_descriptiva .vertical {
+		display: inline-block;
+	}
+	/* Lineas Generales end */
+
+	/* Slide */
+	.home .slide {
+		margin-bottom: 0;
+	}
+	/* Slide end */
+
+	/* Carrusel Aspiracional */
+	.home .carrusel_aspiracional {
+		margin-bottom: 0;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.home .carrusel_aspiracional .content_frase {
+		order: 0;
+	}
+
+	.home .carrusel_aspiracional .content_frase p {
+		text-align: right;
+		padding-right: 15px;
+	}
+	/* Carrusel Aspiracional end */
+
+	/* Frase Descriptiva */
+	.home .frase_descriptiva {
+		position: relative;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin: 0;
+	}
+
+	.home .frase_descriptiva br {
+		display: inline-block;
+	}
+
+	.home .frase_descriptiva .horizontal {
+		display: inline-block;
+		top: 0;
+	}
+	/* Frase Descriptiva end */
+
+	/* Nuestros Sistemas */
+	.home .nuestros_sistemas {
+		position: relative;
+		padding-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.home .nuestros_sistemas .horizontal {
+		display: inline-block;
+		top: 0;
+	}
+
+	.home .nuestros_sistemas .content_productos .producto {
+		max-width: 20%;
+	}
+
+	.home .nuestros_sistemas .content_productos .producto h3 {
+		font-size: 1rem;
+	}
+	/* Nuestros Sistemas end */
+
+	/* Arquitectos & Distribuidores */
+	.home .arq_dist .content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 0;
+	}
+
+	.home .arq_dist .content {
+		align-items: flex-end;
+		text-align: right;
+		padding-right: 30px;
+	}
+
+	.home .arq_dist .content:last-child {
+		align-items: flex-start;
+		text-align: left;
+		padding-left: 30px;
+	}
+	/* Arquitectos & Distribuidores end */
+
+	/* Propiedades */
+	.home .propiedades {
+		margin-bottom: 0;
+		position: relative;
+	}
+
+	.home .propiedades .content_propiedades {
+		border-right: solid var(--primary-color) 1px;
+		margin-bottom: 0;
+	}
+
+	.home .propiedades .col-md-3:last-child .content_propiedades {
+		border-right: solid transparent 1px;
+	}
+	/* Propiedades end */
+
+	/* Contacto */
+	.home .modulo_contacto {
+		position: relative;
+		margin-top: -10px;
+		margin-bottom: 0;
+	}
+
+	.home .modulo_contacto h3 {
+		text-align: right;
+		font-size: 2rem;
+	}
+
+	.home .modulo_contacto form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	.home .modulo_contacto .formulario .form-control {
+		width: 65%;
+	}
+
+	.home .modulo_contacto .content_formulario {
+		border-right: solid 1px var(--primary-color) ;
+		padding-top: 80px;
+		padding-right: 15px;
+	}
+
+	.home .modulo_contacto .col-md-9:last-child .content_formulario {
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: -1px;
+		height: 60px;
+	}
+	/* Contacto end */
+
+	/* Galería Productos */
+	.home .galeria_productos {
+		border-top: solid 1px var(--primary-color);
+		border-bottom: solid 1px var(--primary-color);
+		margin-bottom: 0;
+	}
+
+	.home .galeria_productos .img_small {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.home .galeria_productos .content_description {
+		padding: 0;
+		background: transparent;
+	}
+
+	.home .galeria_productos .content_description #img_text {
+		color: black;
+	}
+
+	.home .galeria_productos .content_description #number_text {
+		color: var(--primary-color);
+	}
+
+	.home .galeria_productos .content_description #number_text {
+		font-size: 1.25rem;
+		font-weight: 700;
+	}
+
+	.home .galeria_productos .content_description #number_text:before {
+		background: var(--primary-color);
+		width: 23px;
+	}
+
+	.home .galeria_productos .content_description p br {
+		display: inline-block;
+	}
+	/* Galería Productos end */
+
+	/* Info */
+	.home .info {
+		margin-bottom: 30px;
+	}
+
+	.home .info .frase {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		text-align: right;
+		padding-right: 25px;
+		border-right: solid 1px var(--primary-color);
+	}
+
+	.home .info .frase p br {
+		display: inline-block;
+	}
+
+	.home .info .frase p {
+		margin-bottom: 0;
+	}
+
+	.home .info .flores {
+		background-size: 340px;
+		height: auto;
+		margin-bottom: 0;
+		border-bottom: none;
+		background-position: 15% 108%;
+	}
+	/* Info end */
 
 }
 
 @media (min-width: 992px) {
 
+	/* Carrusel Aspiracional */
+	.home .carrusel_aspiracional .content_frase p {
+		padding-right: 30px;
+	}
+	/* Carrusel Aspiracional end */
+
+	/* Info	*/
+	.home .info .flores {
+		background-size: 440px;
+		background-position: 50% 115%;
+	}
+	/* Info end	*/
+
 }
 
 @media (min-width: 1200px) {
+	/* Lineas Generales */
+	.home .slide .horizontal, .home .carrusel_aspiracional .horizontal {
+		bottom: 60px;
+	}
+	/* Lineas Generales end */
+
+	/* Slide */
+	.home .content_slide {
+		padding-top: 60px;
+	}
+
+	.home .slide .carousel h2 {
+		font-size: 3rem;
+	}
+	/* Slide end */
+
+	/* Carrusel Aspiracional */
+	.home .carrusel_aspiracional {
+		padding-top: 60px;
+	}
+
+	.home .carrusel_aspiracional h1 {
+		font-size: 1.75rem;
+	}
+
+	.home .carrusel_aspiracional .content_frase p {
+		font-size: 1.25rem;
+		padding-right: 60px;
+	}
+
+	.home .carrusel_aspiracional .content_frase p br {
+		display: inline-block;
+	}
+	/* Carrusel Aspiracional end */
+
+	/* Frase Descriptiva */
+	.home .frase_descriptiva {
+		font-size: 1.25rem;
+	}
+	/* Frase Descriptiva end */
+
+	/* Nuestros Sistemas */
+	.home .nuestros_sistemas h2 {
+		font-size: 3rem;
+	}
+
+	.home .nuestros_sistemas .content_productos .producto h3 {
+		font-size: 1.25rem;
+	}
+	/* Nuestros Sistemas end */
+
+	/* Arquitectos & Distribuidores */
+	.home .arq_dist {
+		background: var(--secondary-color);
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.home .arq_dist h3 {
+		font-size: 3rem;
+		margin-bottom: 20px;
+	}
+
+	.home .arq_dist p {
+		font-size: 1.25rem;
+	}
+
+	.home .arq_dist a {
+		font-size: 1.25rem;
+	}
+	/* Arquitectos & Distribuidores end */
+
+	/* Propiedades */
+	.home .content_propiedades h3 {
+		font-size: 1.25rem;
+	}
+	/* Propiedades end */
+
+	/* Contacto */
+	.home .modulo_contacto h3 {
+		font-size: 2.5rem;
+	}
+
+	.home .modulo_contacto .content_formulario {
+		padding-top: 100px;
+		padding-right: 40px;
+	}
+	/* Contacto end */
+
+	/* Galería Productos */
+	.home .galeria_productos .content_small .number {
+		font-size: 1.25rem;
+	}
+
+	.home .galeria_productos .content_description {
+		width: 65%;
+		margin-left: 35%;
+	}
+
+	.home .galeria_productos .content_description #number_text, 
+	.home .galeria_productos .content_description #img_text {
+		font-size: 1.25rem;
+	}
+
+	.home .galeria_productos .content_description #number_text {
+		font-size: 1.75rem;
+	}
+
+	.home .galeria_productos .content_description #number_text::before {
+		width: 30px;
+	}
+	/* Galería Productos end */
+
+	/* Info */
+	.home .info .frase p {
+		font-size: 1.25rem;
+	}
+
+	.home .info .flores {
+	  background-size: 525px;
+	  background-position: 27% 127%;
+	}
+	/* Info end */
+
+	/* Info Adicional */
+	.home .info_adicional {
+		font-size: 1.25rem;
+	}
+
+	.home .info_adicional .featured {
+		font-size: 1.5rem;
+	}
+	/* Info Adicional end */
 
 }
 
 @media (min-width: 1400px) {
 
+	/* Info */
+	.home .info .flores {
+	  background-size: 520px;
+	  background-position: 50% 117%;
+	}
+	/* Info end */
+
 }
 
 @media (min-width: 1600px) {
+
+	/* Slide */
+	.home .slide .carousel h2 {
+		font-size: 4rem;
+	}
+	/* Slide end */
 
 }

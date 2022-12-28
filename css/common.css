@@ -38,6 +38,7 @@ button,
   font-weight: 300;
   border-color: var(--primary-color);
   padding: 5px 30px;
+  border-radius: 0;
 }
 
 .btn-check:focus + .btn-primary, .btn-primary:focus,
@@ -57,6 +58,7 @@ button,
 }
 
 .btn-primary:hover {
+  border-color: transparent!important;
   background: var(--primary-color);
   color: white;
 }
@@ -65,6 +67,60 @@ button,
 #app {
   position: relative;
 }
+
+/* Módulo Contacto */
+.modulo_contacto {
+  margin-bottom: 60px;
+}
+
+.modulo_contacto h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 1.75rem;
+}
+
+.modulo_contacto h3 span {
+  font-weight: 700;
+}
+
+.modulo_contacto .form-control {
+  border-radius: 0;
+  margin-bottom: 15px;
+  border-color: var(--primary-color);
+}
+
+.modulo_contacto .form-control:focus {
+  border-color: var(--secondary-color);
+  box-shadow: none;
+}
+
+.modulo_contacto input::placeholder,
+.modulo_contacto textarea::placeholder {
+   text-align: center; 
+   color: var(--primary-color);
+}
+
+.modulo_contacto .invalid-feedback {
+  margin-bottom: 15px;
+  margin-top: -15px;
+  font-size: 0.75rem;
+}
+
+.modulo_contacto .content_button {
+  text-align: right;
+}
+
+.modulo_contacto .content_button #spinner {
+  display: none;
+}
+
+.modulo_contacto .alert-success {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  border-color: grey;
+}
+/* Módulo Contacto end */
 
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
