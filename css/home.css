@@ -315,43 +315,6 @@
 	}
 	/* Frase Descriptiva end */
 
-	/* Contacto */
-	.home .modulo_contacto {
-		position: relative;
-		margin-top: -10px;
-		margin-bottom: 0;
-	}
-
-	.home .modulo_contacto h3 {
-		text-align: right;
-		font-size: 2rem;
-	}
-
-	.home .modulo_contacto form {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-end;
-	}
-
-	.home .modulo_contacto .formulario .form-control {
-		width: 65%;
-	}
-
-	.home .modulo_contacto .content_formulario {
-		border-right: solid 1px var(--primary-color) ;
-		padding-top: 80px;
-		padding-right: 15px;
-	}
-
-	.home .modulo_contacto .col-md-9:last-child .content_formulario {
-		padding-top: 0;
-		padding-bottom: 0;
-		margin-top: -1px;
-		height: 60px;
-	}
-	/* Contacto end */
-
 	/* Galería Productos */
 	.home .galeria_productos {
 		border-top: solid 1px var(--primary-color);
@@ -484,17 +447,6 @@
 		font-size: 1.25rem;
 	}
 	/* Frase Descriptiva end */
-
-	/* Contacto */
-	.home .modulo_contacto h3 {
-		font-size: 2.5rem;
-	}
-
-	.home .modulo_contacto .content_formulario {
-		padding-top: 100px;
-		padding-right: 40px;
-	}
-	/* Contacto end */
 
 	/* Galería Productos */
 	.home .galeria_productos .content_small .number {

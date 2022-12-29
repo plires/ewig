@@ -326,6 +326,44 @@ button,
   }
   /* Propiedades end */
 
+  /* Módulo Contacto */
+  .modulo_contacto {
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 0;
+  }
+
+  .modulo_contacto h3 {
+    text-align: right;
+    font-size: 2rem;
+  }
+
+  .modulo_contacto form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .modulo_contacto .formulario .form-control,
+  .modulo_contacto .formulario .invalid-feedback {
+    width: 65%;
+  }
+
+  .modulo_contacto .content_formulario {
+    border-right: solid 1px var(--primary-color) ;
+    padding-top: 80px;
+    padding-right: 15px;
+  }
+
+  .modulo_contacto .col-md-9:last-child .content_formulario {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -1px;
+    height: 60px;
+  }
+  /* Contacto end */
+
 }
 
 @media (min-width: 992px) {
@@ -370,6 +408,17 @@ button,
     font-size: 1.25rem;
   }
   /* Propiedades end */
+
+  /* Módulo Contacto */
+  .modulo_contacto h3 {
+    font-size: 2.5rem;
+  }
+
+  .modulo_contacto .content_formulario {
+    padding-top: 100px;
+    padding-right: 40px;
+  }
+  /* Contacto end */
 
 }
 
