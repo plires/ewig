@@ -93,6 +93,7 @@ header nav ul {
 header nav ul li {
 	padding-bottom: 15px;
 	width: 100%;
+	position: relative;
 }
 
 header nav ul li:last-child {
@@ -108,6 +109,7 @@ header nav ul li a {
 	transition-delay: 0.1s;
 	transition-duration: 0.3s;
 	transition-property: all;
+	position: relative;
 }
 
 header nav #products {
@@ -293,6 +295,21 @@ header nav ul li a:hover {
 		padding: 0 15px;
 	}
 
+	header nav ul a.active:after {
+		content: '';
+		position: absolute;
+		bottom: -15px;
+		left: calc( 50% - 15px);
+		height: 3px;
+		width: 30px;
+		background: var(--primary-color);
+	}
+
+	header.fixed nav ul a.active:after {
+		background: white;
+		bottom: -14px;
+	}
+
 	header nav #btn_menu_products {
 		text-transform: initial;
 		font-size: 1.25rem;
@@ -423,6 +440,10 @@ header nav ul li a:hover {
 
 	header.fixed nav #content_products {
 		top: 45px;
+	}
+
+	header nav ul a.active:after {
+		bottom: -25px;
 	}
 
 }
