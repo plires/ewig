@@ -1,0 +1,117 @@
+/* Título */
+.empresa h1 {
+	font-size: 2rem;
+	font-weight: 300;
+	color: var(--primary-color);
+	text-align: center;
+	margin-top: 30px;	
+	margin-bottom: 30px;	
+}
+/* Título end */
+
+/* Descripción */
+.empresa .descripcion {
+	margin-bottom: 60px;
+}
+
+.empresa .descripcion p span {
+	font-weight: 500;
+}
+/* Descripción end */
+
+/* Video Completo */
+.empresa .video_completo {
+	margin-bottom: 30px;
+}
+/* Video Completo end */
+
+/* Arquitectos & Distribuidores */
+.empresa .arq_dist {
+	margin-bottom: 0;
+}
+/* Arquitectos & Distribuidores end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+	/* Descripción */
+	.empresa .descripcion {
+		border-top: solid 1px var(--primary-color);
+		border-bottom: solid 1px var(--primary-color);
+		margin-bottom: 10px;
+	}
+
+	.empresa .descripcion .content {
+		border-left: solid 1px var(--primary-color);
+		border-right: solid 1px var(--primary-color);
+		padding: 45px 60px;
+	}
+
+	.empresa .descripcion .content p {
+		margin-bottom: 0;
+	}
+	/* Descripción end */
+
+	/* Video Completo */
+	.empresa .video_completo {
+		border-top: solid 1px var(--primary-color);
+		border-bottom: solid 1px var(--primary-color);
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-bottom: 40px;
+	}
+	/* Video Completo end */
+
+}
+
+@media (min-width: 992px) {
+
+	/* Descripción */
+	.empresa .descripcion .content p {
+		font-size: 1.25rem;
+	}
+	/* Descripción end */
+
+}
+
+@media (min-width: 1200px) {
+
+	/* Título */
+	.empresa h1 {
+		font-size: 3rem;
+	}
+	/* Título end */
+
+
+	/* Descripción */
+	.empresa .descripcion .content p {
+		font-size: 1.5rem;
+	}
+	/* Descripción end */
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1600px) {
+
+}

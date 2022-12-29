@@ -42,7 +42,7 @@
 				</li>
 
 				<li>
-					<a class="<?=($current === 'empresa') ? 'active' : ''?>" href="./">Empresa</a>
+					<a class="<?=($current === 'empresa') ? 'active' : ''?>" href="./empresa.php">Empresa</a>
 				</li>
 
 				<li>
