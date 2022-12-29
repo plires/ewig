@@ -1,65 +1,65 @@
 /* Lineas Generales */
-	.home .slide .horizontal,
-	.home .carrusel_aspiracional .horizontal,
-	.home .frase_descriptiva .horizontal {
-		display: none;
-		width: 100%;
-		height: 1px;
-		position: absolute;
-		left: 0;
-		bottom: 30px;
-		z-index: 2;
-	}
+.home .slide .horizontal,
+.home .carrusel_aspiracional .horizontal,
+.home .frase_descriptiva .horizontal {
+	display: none;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	bottom: 30px;
+	z-index: 2;
+}
 
-	.home .slide .horizontal i,
-	.home .carrusel_aspiracional .horizontal i,
-	.home .frase_descriptiva .horizontal i {
-		position: absolute;
-	  left: 0;
-	  bottom: 0;
-	  width: 100%;
-	  height: 1px;
-	  background: white;
-	  overflow: hidden;		
-	}
+.home .slide .horizontal i,
+.home .carrusel_aspiracional .horizontal i,
+.home .frase_descriptiva .horizontal i {
+	position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: white;
+  overflow: hidden;		
+}
 
-	.home .slide .horizontal i::before,
-	.home .carrusel_aspiracional .horizontal i::before,
-	.home .frase_descriptiva .horizontal i::before {
-		content: '';
-	  position: absolute;
-	  left: 0;
-	  width: 100%;
-	  height: 100%;
-	  background: linear-gradient(90deg, var(--primary-color), #f6b1a6, var(--primary-color), #f6b1a6, var(--primary-color));
-	  animation:  animate 4s linear infinite;	
-	}
+.home .slide .horizontal i::before,
+.home .carrusel_aspiracional .horizontal i::before,
+.home .frase_descriptiva .horizontal i::before {
+	content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), #f6b1a6, var(--primary-color), #f6b1a6, var(--primary-color));
+  animation:  animate 4s linear infinite;	
+}
 
-	@keyframes animate {
-	  0%
-	  {
-	    background-position-x: 0;
-	  }
-	  100%
-	  {
-	    background-position-x: 1920px;
-	  }
-	}
+@keyframes animate {
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: 1920px;
+  }
+}
 
-	.home .slide .vertical,
-	.home .carrusel_aspiracional .vertical,
-	.home .frase_descriptiva .vertical {
-		position: relative;
-		display: none;
-		width: 1px;
-		height: 100%;
-		position: absolute;
-		left: 23%;
-		top: 0;
-		z-index: 2;
-		background: var(--primary-color);
-	}
-	/* Lineas Generales end */
+.home .slide .vertical,
+.home .carrusel_aspiracional .vertical,
+.home .frase_descriptiva .vertical {
+	position: relative;
+	display: none;
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	left: 23%;
+	top: 0;
+	z-index: 2;
+	background: var(--primary-color);
+}
+/* Lineas Generales end */
 
 /* Slide */
 .home .slide {
@@ -130,26 +130,6 @@
 	display: none;
 }
 /* Frase Descriptiva end */
-
-/* Propiedades */
-.home .propiedades {
-	margin-bottom: 60px;
-}
-
-.home .content_propiedades {
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.home .content_propiedades img {
-	max-width: 50%;
-}
-
-.home .content_propiedades h3 {
-	font-size: 1rem;
-	margin-top: 5px;
-}
-/* Propiedades end */
 
 /* Galería Productos */
 .home .galeria_productos {
@@ -335,22 +315,6 @@
 	}
 	/* Frase Descriptiva end */
 
-	/* Propiedades */
-	.home .propiedades {
-		margin-bottom: 0;
-		position: relative;
-	}
-
-	.home .propiedades .content_propiedades {
-		border-right: solid var(--primary-color) 1px;
-		margin-bottom: 0;
-	}
-
-	.home .propiedades .col-md-3:last-child .content_propiedades {
-		border-right: solid transparent 1px;
-	}
-	/* Propiedades end */
-
 	/* Contacto */
 	.home .modulo_contacto {
 		position: relative;
@@ -520,12 +484,6 @@
 		font-size: 1.25rem;
 	}
 	/* Frase Descriptiva end */
-
-	/* Propiedades */
-	.home .content_propiedades h3 {
-		font-size: 1.25rem;
-	}
-	/* Propiedades end */
 
 	/* Contacto */
 	.home .modulo_contacto h3 {
