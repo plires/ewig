@@ -1,8 +1,7 @@
 /* Lineas Generales */
 	.home .slide .horizontal,
 	.home .carrusel_aspiracional .horizontal,
-	.home .frase_descriptiva .horizontal,
-	.home .nuestros_sistemas .horizontal {
+	.home .frase_descriptiva .horizontal {
 		display: none;
 		width: 100%;
 		height: 1px;
@@ -14,8 +13,7 @@
 
 	.home .slide .horizontal i,
 	.home .carrusel_aspiracional .horizontal i,
-	.home .frase_descriptiva .horizontal i,
-	.home .nuestros_sistemas .horizontal i {
+	.home .frase_descriptiva .horizontal i {
 		position: absolute;
 	  left: 0;
 	  bottom: 0;
@@ -27,8 +25,7 @@
 
 	.home .slide .horizontal i::before,
 	.home .carrusel_aspiracional .horizontal i::before,
-	.home .frase_descriptiva .horizontal i::before,
-	.home .nuestros_sistemas .horizontal i::before {
+	.home .frase_descriptiva .horizontal i::before {
 		content: '';
 	  position: absolute;
 	  left: 0;
@@ -133,47 +130,6 @@
 	display: none;
 }
 /* Frase Descriptiva end */
-
-/* Nuestros Sistemas */
-.home .nuestros_sistemas {
-	margin-bottom: 60px;
-}
-
-.home .nuestros_sistemas h2 {
-	font-size: 2rem;
-	font-weight: 300;
-	color: var(--primary-color);
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.home .nuestros_sistemas .content_productos {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.home .nuestros_sistemas .content_productos .producto {
-	text-align: center;
-	max-width: 40%;
-	margin-bottom: 40px;
-}
-
-.home .nuestros_sistemas .content_productos .producto:last-child {
-	margin-bottom: 0;
-}
-
-.home .nuestros_sistemas .content_productos .producto a:hover img {
-	opacity: 0.6;
-}
-
-.home .nuestros_sistemas .content_productos .producto h3 {
-	font-size: 1.125rem;
-	margin-top: 7px;
-	margin-bottom: 0;
-	color: var(--primary-color);
-}
-/* Nuestros Sistemas end */
 
 /* Arquitectos & Distribuidores */
 .home .arq_dist {
@@ -339,12 +295,6 @@
 	}
 	/* Slide end */
 
-	/* Nuestros Sistemas */
-	.home .nuestros_sistemas .content_productos .producto {
-		max-width: 30%;
-	}
-	/* Nuestros Sistemas end */
-	
 }
 
 @media (min-width: 768px) {
@@ -365,8 +315,7 @@
 	/* Lineas Generales */
 	.home .slide .horizontal,
 	.home .carrusel_aspiracional .horizontal,
-	.home .frase_descriptiva .horizontal,
-	.home .nuestros_sistemas .horizontal {
+	.home .frase_descriptiva .horizontal {
 		display: inline-block;
 	}
 
@@ -418,27 +367,6 @@
 		top: 0;
 	}
 	/* Frase Descriptiva end */
-
-	/* Nuestros Sistemas */
-	.home .nuestros_sistemas {
-		position: relative;
-		padding-top: 30px;
-		margin-bottom: 30px;
-	}
-
-	.home .nuestros_sistemas .horizontal {
-		display: inline-block;
-		top: 0;
-	}
-
-	.home .nuestros_sistemas .content_productos .producto {
-		max-width: 20%;
-	}
-
-	.home .nuestros_sistemas .content_productos .producto h3 {
-		font-size: 1rem;
-	}
-	/* Nuestros Sistemas end */
 
 	/* Arquitectos & Distribuidores */
 	.home .arq_dist .content {
@@ -647,16 +575,6 @@
 		font-size: 1.25rem;
 	}
 	/* Frase Descriptiva end */
-
-	/* Nuestros Sistemas */
-	.home .nuestros_sistemas h2 {
-		font-size: 3rem;
-	}
-
-	.home .nuestros_sistemas .content_productos .producto h3 {
-		font-size: 1.25rem;
-	}
-	/* Nuestros Sistemas end */
 
 	/* Arquitectos & Distribuidores */
 	.home .arq_dist {
