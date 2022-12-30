@@ -1,0 +1,308 @@
+/* Descripción */
+.arquitectos .descripcion h2 {
+	font-weight: 400;
+}
+
+.arquitectos .descripcion p {
+	margin-bottom: 0;
+}
+/* Descripción end */
+
+/* Características */
+.arquitectos .caracterisitcas {
+	margin-bottom: 40px;
+}
+
+.arquitectos .caracterisitcas .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.arquitectos .caracterisitcas .content img {
+	max-width: 80%;
+	margin-bottom: 10px;
+}
+
+.arquitectos .caracterisitcas .content p {
+	text-align: center;
+}
+
+.arquitectos .caracterisitcas p span {
+	font-weight: 500;
+}
+
+.arquitectos .caracterisitcas .content_caracteristicas .row:first-child {
+	margin-bottom: 40px;
+}
+/* Características end */
+
+/* Arquitectura Sostenible */
+.arquitectos .arq_sostenible {
+	margin-bottom: 60px;
+}
+
+.arquitectos .arq_sostenible h2 {
+	color: #006633;
+	font-weight: 400;
+	text-align: center;
+}
+
+.arquitectos .arq_sostenible h2 br {
+	display: none;
+}
+
+.arquitectos .arq_sostenible .content_data {
+	order: 0;
+}
+
+.arquitectos .arq_sostenible .content_image {
+	order: 1;
+	text-align: center;
+}
+
+.arquitectos .arq_sostenible .content_image img {
+	max-width: 80%;
+}
+
+.arquitectos .arq_sostenible p span {
+	font-weight: 500;
+}
+/* Arquitectura Sostenible end  */
+
+/* Formulario */
+.arquitectos .formulario h2 {
+	color: var(--primary-color);
+	text-align: center;
+	font-weight: 400;
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+.arquitectos .formulario h4 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.25rem;
+	margin-bottom: 20px;
+}
+
+.arquitectos .formulario .content_button {
+	text-align: center;
+}
+/* Formulario end */
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 480px) {
+	/* Galería */
+	.arquitectos .section_galeria .slick-slide {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	/* Galería end */
+}
+
+@media (min-width: 576px) {
+	/* Arquitectura Sostenible */
+	.arquitectos .arq_sostenible .content_image img {
+		max-width: 60%;
+	}
+	/* Arquitectura Sostenible end */
+}
+
+@media (min-width: 768px) {
+	/* Descripción */
+	.arquitectos .descripcion {
+		margin-bottom: 60px;
+	}
+	/* Descripción end */
+
+	/* Características */
+	.arquitectos .caracterisitcas {
+		margin-bottom: 0;
+	}
+
+	.arquitectos .caracterisitcas .content {
+		border-right: solid 1px var(--primary-color);
+	}
+
+	.arquitectos .caracterisitcas .content:first-child {
+		border: none;
+	}
+
+	.arquitectos .caracterisitcas .content:last-child {
+		border-right: none;
+	}
+
+	.arquitectos .caracterisitcas .content:nth-child(2) {
+		border-left: solid 1px var(--primary-color);
+	}
+
+	.arquitectos .caracterisitcas .content_caracteristicas .row:first-child {
+		margin-bottom: 0;
+	}
+
+	.arquitectos .caracterisitcas .content_descripcion {
+		padding-top: 40px;
+		padding-left: 20px;
+		padding-bottom: 40px;
+		border-left: solid 1px var(--primary-color);
+	}
+
+	.arquitectos .caracterisitcas .content_descripcion p {
+		margin-bottom: 0;
+	}
+	/* Características end */
+
+	/* Arquitectura Sostenible */
+	.arquitectos .arq_sostenible {
+		border-top: solid 1px #008036;
+		border-bottom: solid 1px #008036;
+		padding-bottom: 30px;
+	}
+
+	.arquitectos .arq_sostenible h2 {
+		text-align: left;
+	}
+
+	.arquitectos .arq_sostenible h2 br {
+		display: inline-block;
+	}
+
+	.arquitectos .arq_sostenible .content_data {
+		order: 1;
+	}
+
+	.arquitectos .arq_sostenible .content_image {
+		order: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 30px;
+	}
+
+	.arquitectos .arq_sostenible .content_image img {
+		max-width: 100%;
+		/*height: 350px;
+		object-fit: cover;*/
+	}
+
+	.arquitectos .arq_sostenible p:last-child {
+		margin: 0;
+	}
+
+	.arquitectos .arq_sostenible .content_data .title {
+		position: relative;
+		padding-top: 50px;
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+	}
+
+	.arquitectos .arq_sostenible .content_data .title .line_vertical {
+		position: absolute;
+		top: 0;
+		left: -12px;
+		width: 1px;
+		height: 100%;
+		background: #008036;
+	}
+
+	.arquitectos .arq_sostenible .content_data .title .line_horizontal {
+		position: absolute;
+		bottom: 0;
+		left: -12px;
+		width: 150%;
+		height: 1px;
+		background: #008036;
+	}
+	/* Arquitectura Sostenible end */
+
+	/* Formulario	*/
+	.arquitectos .formulario {
+		margin-bottom: 60px;
+	}
+
+	.arquitectos .modulo_contacto .form-control,
+	.arquitectos .modulo_contacto .invalid-feedback {
+		width: 60%;
+		margin-right: 20%;
+	}
+
+	.arquitectos .formulario .content_button {
+		width: 100%;
+		text-align: center;
+	}
+	/* Formulario	end */
+
+
+
+}
+
+@media (min-width: 992px) {
+	/* Características */
+	.arquitectos .caracterisitcas .content p {
+		font-size: 1.25rem;
+	}
+
+	.arquitectos .caracterisitcas .content_descripcion p {
+		font-size: 1.25rem;
+	}
+	/* Características end */
+
+	/* Arquitectura Sostenible */
+	.arquitectos .arq_sostenible h2 {
+		font-size: 2rem;
+		padding-left: 5px;
+	}
+
+	.arquitectos .arq_sostenible p {
+		font-size: 1.25rem;
+	}
+
+	.arquitectos .arq_sostenible .content_image img {
+		height: 435px;
+		object-fit: cover;
+	}
+	/* Arquitectura Sostenible end */
+
+}
+
+@media (min-width: 1200px) {
+
+	/* Arquitectura Sostenible */
+	.arquitectos .arq_sostenible {
+		padding-bottom: 45px;
+	}
+
+	.arquitectos .arq_sostenible .content_image {
+		padding-top: 45px;
+	}
+
+	.arquitectos .arq_sostenible .content_image img {
+		width: 100%;
+	}
+
+	.arquitectos .arq_sostenible .content_data {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	}
+	/* Arquitectura Sostenible end */
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1600px) {
+
+}

@@ -50,7 +50,7 @@
 				</li>
 
 				<li>
-					<a class="<?=($current === 'arquitectos') ? 'active' : ''?>" href="./">Arquitectos</a>
+					<a class="<?=($current === 'arquitectos') ? 'active' : ''?>" href="./arquitectos.php">Arquitectos</a>
 				</li>
 
 				<li>
