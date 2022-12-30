@@ -135,7 +135,11 @@ function galleryHome(imgs) {
 window.galleryHome = galleryHome; // hacemos la funcion global por webpack
 // Carrusel Aspiracional Home end
 
-if ( filename === '' || filename === 'arquitectos.php' ) { // Scripts para page especifica (String vacio = Home o raiz)
+if ( 
+  filename === '' || // Page especifica (String vacio = Home o raiz)
+  filename === 'arquitectos.php' ||
+  filename === 'distribuidores.php'
+  ) { 
   // Plugin Slick (Carrousel logos) Funcion
   $('.galeria').slick({
     autoplay: true,

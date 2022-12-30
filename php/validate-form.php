@@ -43,6 +43,12 @@
 	    $company = $_POST['company'];
 	  }
 
+	  if ( $app->emptyInput( $_POST['zone']) && $current === 'distribuidores.php' ) {
+	    $errors['error_zone']='Ingresa tu zaona de trabajo';
+	  } else {
+	    $zone = $_POST['zone'];
+	  }
+
 	  if ($app->emptyInput( $_POST['comments'])) {
 	    $errors['error_comments']='Ingresa tu consulta';
 	  } else {

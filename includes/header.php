@@ -46,7 +46,7 @@
 				</li>
 
 				<li>
-					<a class="<?=($current === 'distribuidores') ? 'active' : ''?>" href="./">Distribuidores</a>
+					<a class="<?=($current === 'distribuidores') ? 'active' : ''?>" href="./distribuidores.php">Distribuidores</a>
 				</li>
 
 				<li>

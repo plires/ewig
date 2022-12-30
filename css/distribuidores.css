@@ -1,0 +1,124 @@
+/* Galería */
+.distribuidores .section_galeria {
+	padding-bottom: 60px;
+}
+/* Galería end */
+
+/* Propiedades */
+.distribuidores .propiedades {
+	margin-bottom: 30px;
+}
+/* Propiedades end */
+
+/* Características */
+.distribuidores .caracteristicas p span {
+	font-weight: 500;
+}
+/* Características end */
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 480px) {
+	
+}
+
+@media (min-width: 576px) {
+	
+}
+
+@media (min-width: 768px) {
+
+	/* Galería */
+	.distribuidores .section_galeria {
+		border-bottom: solid 1px var(--primary-color);
+	}
+	/* Galería end */
+
+	/* Propiedades */
+	.distribuidores .propiedades {
+		margin-bottom: 0;
+	}
+
+	.distribuidores .propiedades .col-md-3 {
+		margin-top: 30px;
+	}
+
+	.distribuidores .propiedades .col-md-3:nth-child(2) {
+    border-right: solid 1px var(--primary-color);
+	}
+
+	.distribuidores .propiedades .col-md-3:nth-child(3) {
+		margin-top: 0;
+		padding-top: 30px;
+		border-left: none;
+	}
+	/* Propiedades end */
+
+	/* Características */
+	.distribuidores .caracteristicas {
+    border-bottom: solid 1px var(--primary-color);
+    margin-bottom: 60px;
+  }
+
+	.distribuidores .caracteristicas .col-md-9 {
+    border-right: solid 1px var(--primary-color);
+    display: flex;
+	  justify-content: flex-end;
+	  align-items: center;
+	  text-align: right;
+  }
+
+	.distribuidores .caracteristicas .content_caracteristicas {
+    padding-top: 40px;
+    padding-right: 15px;
+    width: 65%;
+  }
+
+  .distribuidores .caracteristicas .content_caracteristicas p {
+  	margin-bottom: 0;
+  }
+
+  .distribuidores .caracteristicas .col-md-9:last-child .content_caracteristicas {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 40px;
+  }
+	/* Características end */
+
+	/* Formulario de Contacto */
+	.distribuidores .formulario h2 {
+		margin-bottom: 15px;
+	}
+	/* Formulario de Contacto end */
+
+
+}
+
+@media (min-width: 992px) {
+
+	/* Características */
+	.distribuidores .caracteristicas .content_caracteristicas p {
+		font-size: 1.25rem;
+	}
+	/* Características end */
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1600px) {
+
+}

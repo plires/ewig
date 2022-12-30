@@ -353,20 +353,38 @@ button,
     position: relative;
   }
 
-  .propiedades .content_propiedades {
+  .propiedades .col-md-3 {
     border-right: solid var(--primary-color) 1px;
+    border-left: solid var(--primary-color) 1px;
+  }
+
+  .propiedades .content_propiedades {
     margin-bottom: 0;
   }
 
-  .propiedades .col-md-3:first-child .content_propiedades {
+  .propiedades .col-md-3:nth-child(1),
+  .propiedades .col-md-3:nth-child(2),
+  .propiedades .col-md-3:nth-child(3) {
+    border-right: none;
+  }
+
+  .propiedades .col-md-3:nth-child(3) {
+    border-right: solid var(--primary-color) 1px;
+  }
+
+  .propiedades .col-md-3:first-child {
     border-left: solid var(--primary-color) 1px;
+  }
+
+  .propiedades .col-md-3:last-child {
+    border-right: solid var(--primary-color) 1px;
+    border-left: none;
   }
   /* Propiedades end */
 
   /* Módulo Contacto */
   .modulo_contacto {
     position: relative;
-    margin-top: -10px;
     margin-bottom: 0;
   }
 
@@ -387,8 +405,11 @@ button,
     width: 65%;
   }
 
-  .modulo_contacto .content_formulario {
+  .modulo_contacto .col-md-9 {
     border-right: solid 1px var(--primary-color) ;
+  }
+
+  .modulo_contacto .content_formulario {
     padding-top: 80px;
     padding-right: 15px;
   }
