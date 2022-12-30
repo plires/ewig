@@ -38,6 +38,11 @@ module.exports = {
       defaults: false
     })
   ],
+  resolve: {
+    alias: {
+        jquery: "jquery/src/jquery"
+    }
+  },
   module: {
     rules: [
       javascriptRules,
