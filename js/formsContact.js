@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	if ( 
 		filename === '' || 
 		filename === 'index.php' ||
-		filename === 'empresa.php'
+		filename === 'empresa.php' ||
+		filename === 'arquitectos.php'
 		) { // Scripts para page especifica
 		const btnSend = document.getElementById('send')
 		const spinner = document.getElementById('spinner');

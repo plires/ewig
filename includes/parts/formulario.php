@@ -1,6 +1,7 @@
 <form id="form-contacto" action="./php/validate-form.php" method="post" class="needs-validation" novalidate>
 
 	<input name="origin" type="hidden" value="Formulario de Contacto">
+	<input name="current" type="hidden" value="<?= $current_filename ?>">
 
 	<input 
 		class="form-control"

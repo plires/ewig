@@ -12,26 +12,38 @@
 
 	if($data['success'] == 1 && $data['score'] >= 0.5){
 
+		if ( isset($_POST['current']) ) {
+	  	$current = $_POST['current'];
+	  } else {
+	  	exit('Error inesperado, cargue la ´pagina nuevamente y vuelva a intentar.');
+	  }
+
 		// Verificamos si hay errores en el formulario
-	  if ($app->emptyInput($_POST['name'])){
+	  if ($app->emptyInput( $_POST['name'])) {
 	    $errors['error_name']='Ingresa tu nombre';
 	  } else {
 	    $name = $_POST['name'];
 	  }
 
-	  if (!$app->emailCheck($_POST['email'])){
+	  if (!$app->emailCheck( $_POST['email'])) {
 	    $errors['error_email']='Ingresa el mail :(';
 	  } else {
 	    $email = $_POST['email'];
 	  }
 
-	  if ($app->emptyInput($_POST['phone'])){
+	  if ($app->emptyInput( $_POST['phone'])) {
 	    $errors['error_phone']='Ingresa tu teléfono';
 	  } else {
 	    $phone = $_POST['phone'];
 	  }
 
-	  if ($app->emptyInput($_POST['comments'])){
+	  if ( $app->emptyInput( $_POST['company']) && $current === 'arquitectos.php' ) {
+	    $errors['error_company']='Ingresa tu empresa o razón social';
+	  } else {
+	    $company = $_POST['company'];
+	  }
+
+	  if ($app->emptyInput( $_POST['comments'])) {
 	    $errors['error_comments']='Ingresa tu consulta';
 	  } else {
 	    $comments = $_POST['comments'];
@@ -51,13 +63,13 @@
 		  if ($sendClient) {
 		  	
 		  	$msg_contacto = 'Mensaje recibido. Le contestaremos a la brevedad. Muchas gracias!';
-		    header("Location: " . BASE ."index.php?msg_contacto=". urlencode($msg_contacto) . "#msg_contacto" );
+		    header("Location: " . BASE . $current . "?msg_contacto=". urlencode($msg_contacto) . "#msg_contacto" );
 	  		exit;
 
 		  } else {
 
 		  	$errors['mail'] = 'Error al enviar la consulta, por favor intente nuevamente';
-		  	header("Location: " . BASE . "index.php?errors=" . urlencode(serialize($errors)) . "#error");
+		  	header("Location: " . BASE . $current . "?errors=" . urlencode(serialize($errors)) . "#error");
 		  	exit;
 
 		  }
@@ -65,7 +77,7 @@
 	  } else {
 
 	  	$phone = $_POST['phone'];
-	  	header("Location: " . BASE . "index.php?name=$name&email=$email&phone=$phone&last_name=$last_name&errors=" . urlencode(serialize($errors)) . "#error");
+	  	header("Location: " . BASE . $current . "?name=$name&email=$email&phone=$phone&last_name=$last_name&errors=" . urlencode(serialize($errors)) . "#error");
 	  	exit;
 
 	  }
@@ -74,7 +86,7 @@
   	
   	// Robot
   	$errors['robot'] = 'Error. Por favor intente nuevamente';
-  	header("Location: " . BASE . "index.php?errors=" . urlencode(serialize($errors)) . "#error");
+  	header("Location: " . BASE . $current . "?errors=" . urlencode(serialize($errors)) . "#error");
   	exit;
 	}
 

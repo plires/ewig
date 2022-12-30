@@ -1,5 +1,9 @@
 <?php
 
+$query = $_SERVER['PHP_SELF'];
+$path = pathinfo( $query );
+$current_filename = $path['basename'];
+
 if (isset($_GET['name'])) {
     $name = $_GET['name'];
   } else {
@@ -16,6 +20,18 @@ if (isset($_GET['name'])) {
     $phone = $_GET['phone'];
   } else {
     $phone = '';
+  }
+
+  if (isset($_GET['company'])) {
+    $company = $_GET['company'];
+  } else {
+    $company = '';
+  }
+
+  if (isset($_GET['zone'])) {
+    $zone = $_GET['zone'];
+  } else {
+    $zone = '';
   }
 
   if (isset($_GET['comments'])) {
