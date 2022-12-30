@@ -218,6 +218,11 @@ header nav ul li a.active {
 	font-weight: 500;
 }
 
+header nav ul li.active #btn_menu_products {
+	color: black;
+	font-weight: 500;
+}
+
 header nav ul li a:hover {
 	color: black;
 	transform: translateX(5px);
@@ -386,6 +391,14 @@ header nav ul li a:hover {
 
 	header nav ul li a.active {
 		color: var(--primary-color);
+	}
+
+	header nav ul li.active #btn_menu_products {
+		color: var(--primary-color);
+	}
+
+	header.fixed nav ul li.active #btn_menu_products {
+		color: black;
 	}
 
 	header.fixed nav ul li a {
