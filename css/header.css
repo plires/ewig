@@ -300,7 +300,8 @@ header nav ul li a:hover {
 		padding: 0 15px;
 	}
 
-	header nav ul a.active:after {
+	header nav ul a.active:after,
+	header nav ul li.active #btn_menu_products:after {
 		content: '';
 		position: absolute;
 		bottom: -15px;
@@ -310,7 +311,8 @@ header nav ul li a:hover {
 		background: var(--primary-color);
 	}
 
-	header.fixed nav ul a.active:after {
+	header.fixed nav ul a.active:after,
+	header.fixed nav ul li.active #btn_menu_products:after {
 		background: white;
 		bottom: -14px;
 	}
@@ -455,7 +457,8 @@ header nav ul li a:hover {
 		top: 45px;
 	}
 
-	header nav ul a.active:after {
+	header nav ul a.active:after,
+	header nav ul li.active #btn_menu_products:after {
 		bottom: -25px;
 	}
 
