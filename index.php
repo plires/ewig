@@ -3,7 +3,7 @@
 	require ('includes/config.inc.php');
 	require ('includes/get-variable-handling.php');
   $current = 'home';
-  $product = 'producto_3';
+  $product = '-';
 
 ?>
 
