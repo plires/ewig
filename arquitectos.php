@@ -153,63 +153,14 @@
 							<input name="origin" type="hidden" value="Formulario de Arquitectos">
 							<input name="current" type="hidden" value="<?= $current_filename ?>">
 
-							<input 
-								class="form-control"
-								required="required" 
-								type="text" 
-								name="name" 
-								placeholder="nombre"
-								value="<?= $name ?>">
-							<div class="invalid-feedback">
-						    Ingresá tu nombre
-						  </div>
-
-							<input 
-								class="form-control"
-								required="required" 
-								type="email" 
-								name="email" 
-								placeholder="email"
-								value="<?= $email ?>">
-							<div class="invalid-feedback">
-						    Ingresá tu email
-						  </div>
-
-							<input 
-								class="form-control"
-								required="required" 
-								type="text" 
-								name="phone" 
-								placeholder="teléfono"
-								value="<?= $phone ?>">
-							<div class="invalid-feedback">
-						    Ingresá tu teléfono
-						  </div>
-
-						  <input 
-								class="form-control"
-								required="required" 
-								type="text" 
-								name="company" 
-								placeholder="empresa"
-								value="<?= $company ?>">
-							<div class="invalid-feedback">
-						    Ingresá empresa o razón social
-						  </div>
-
-							<textarea class="form-control" placeholder="consulta" required="required" name="comments"><?= $comments ?></textarea>
-							<div class="invalid-feedback">
-						    Ingresá tu consulta
-						  </div>
-
-							<div class="content_button">
-								<button type="button" id="send" class="btn btn-primary">
-									Enviar
-									<div id="spinner" class="spinner-border spinner-border-sm" role="status">
-									  <span class="visually-hidden"></span>
-									</div>
-								</button>
-							</div>
+							<?php 
+								include_once('./includes/parts/input-name.php');
+								include_once('./includes/parts/input-email.php');
+								include_once('./includes/parts/input-phone.php');
+								include_once('./includes/parts/input-company.php');
+								include_once('./includes/parts/input-comments.php');
+								include_once('./includes/parts/btn-send.php');
+							?>
 
 						</form>
 

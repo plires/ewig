@@ -315,6 +315,14 @@
 	}
 	/* Frase Descriptiva end */
 
+	/* Formulario de Contacto */
+	.home .modulo_contacto .alert-success,
+	.home .modulo_contacto .alert-danger {
+		width: 65%;
+		margin-left: 35%;
+	}
+	/* Formulario de Contacto end */
+
 	/* Galería Productos */
 	.home .galeria_productos {
 		border-top: solid 1px var(--primary-color);

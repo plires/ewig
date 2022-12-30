@@ -236,13 +236,17 @@
 		margin-right: 20%;
 	}
 
+	.arquitectos .modulo_contacto .alert-success,
+	.arquitectos .modulo_contacto .alert-danger {
+		width: 60%;
+		margin-left: 20%;
+	}
+
 	.arquitectos .formulario .content_button {
 		width: 100%;
 		text-align: center;
 	}
 	/* Formulario	end */
-
-
 
 }
 

@@ -145,8 +145,45 @@
 		<!-- Propiedades -->
 		<?php include_once('./includes/modulo-propiedades-producto.php'); ?>
 
-		<!-- Módulo Contacto -->
-		<?php include_once('./includes/modulo-contacto.php'); ?>		
+		<section class="container-fluid modulo_contacto">
+			<div class="container">
+				<div class="row">
+
+					<div data-aos="fade-up" class="col-md-9 formulario">
+						<div class="content_formulario">
+							<h3>¿Querés obtener más <br>información de <span>EWIG</span> o <br>tenés alguna pregunta?</h3>
+							
+							<!-- Mensages -->
+							<?php include_once('./includes/msg.php'); ?>
+
+							<!-- Errors -->
+							<?php include_once('./includes/errors.php'); ?>
+
+							<form id="form-contacto" action="./php/validate-form.php" method="post" class="needs-validation" novalidate>
+
+								<input name="origin" type="hidden" value="Formulario de Contacto">
+								<input name="current" type="hidden" value="<?= $current_filename ?>">
+
+								<?php 
+									include_once('./includes/parts/input-name.php');
+									include_once('./includes/parts/input-email.php');
+									include_once('./includes/parts/input-phone.php');
+									include_once('./includes/parts/input-comments.php');
+									include_once('./includes/parts/btn-send.php');
+								?>
+
+							</form>
+						</div>
+					</div>
+
+					<div class="col-md-9">
+						<div class="content_formulario">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>	
 
 		<!-- Galería Productos -->
 		<section class="container-fluid galeria_productos">
