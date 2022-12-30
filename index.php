@@ -145,6 +145,7 @@
 		<!-- Propiedades -->
 		<?php include_once('./includes/modulo-propiedades-producto.php'); ?>
 
+		<!-- Formulario de Contacto -->
 		<section class="container-fluid modulo_contacto">
 			<div class="container">
 				<div class="row">
@@ -183,7 +184,8 @@
 
 				</div>
 			</div>
-		</section>	
+		</section>
+		<!-- Formulario de Contacto end -->
 
 		<!-- Galería Productos -->
 		<section class="container-fluid galeria_productos">

@@ -399,6 +399,12 @@ button,
     margin-top: -1px;
     height: 60px;
   }
+
+  .modulo_contacto .alert-success,
+  .modulo_contacto .alert-danger {
+    width: 65%;
+    margin-left: 35%;
+  }
   /* Contacto end */
 
 }
