@@ -27,7 +27,7 @@
 							<a class="<?=($product === 'new_elegans') ? 'open' : ''?>" href="#">NEW ELEGANS</a>
 						</li>
 						<li>
-							<a class="<?=($product === 'sliding_7400') ? 'open' : ''?>" href="#">SLIDING 7400</a>
+							<a class="<?=($product === 'sliding_7400') ? 'open' : ''?>" href="./producto-sliding-7400.php">SLIDING 7400</a>
 						</li>
 						<li>
 							<a class="<?=($product === 'compact') ? 'open' : ''?>" href="./producto-compact.php">COMPACT</a>

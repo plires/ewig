@@ -15,7 +15,8 @@ var filename = url.substring(url.lastIndexOf('/')+1);
 if ( 
   filename === 'producto-hebe-schiebe.php' ||
   filename === 'producto-inova.php' ||
-  filename === 'producto-compact.php'
+  filename === 'producto-compact.php' ||
+  filename === 'producto-sliding-7400.php'
   ) { 
 
   var options = { // opciones para objetos CountUp
@@ -171,7 +172,8 @@ if (
   filename === 'distribuidores.php' ||
   filename === 'producto-hebe-schiebe.php' ||
   filename === 'producto-inova.php' ||
-  filename === 'producto-compact.php'
+  filename === 'producto-compact.php' ||
+  filename === 'producto-sliding-7400.php'
   ) { 
   // Plugin Slick (Carrousel logos) Funcion
   $('.galeria').slick({
