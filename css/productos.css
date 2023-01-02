@@ -98,7 +98,7 @@
 }
 
 /* Sliding 7400 */
-.productos .detalles .prod_small .content_detalle p {
+.sliding_7400 .detalles .prod_small .content_detalle p {
 	color: var(--primary-color);
 	font-weight: 300;
 	font-size: 2rem;
@@ -455,7 +455,7 @@
 	}
 
 	/* Sliding 7400 */
-	.productos .detalles .prod_small .content_detalle p {
+	.sliding_7400 .detalles .prod_small .content_detalle p {
 		font-size: 2rem;
 	}
 	/* Sliding 7400 end */

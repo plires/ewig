@@ -24,7 +24,7 @@
 					<span id="btn_menu_products" class="open">Productos<i id="arrow_product" class="fa-solid fa-angle-down"></i></span>
 					<ul id="content_products">
 						<li>
-							<a class="<?=($product === 'new_elegans') ? 'open' : ''?>" href="#">NEW ELEGANS</a>
+							<a class="<?=($product === 'new_elegans') ? 'open' : ''?>" href="./producto-new-elegans.php">NEW ELEGANS</a>
 						</li>
 						<li>
 							<a class="<?=($product === 'sliding_7400') ? 'open' : ''?>" href="./producto-sliding-7400.php">SLIDING 7400</a>
