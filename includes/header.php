@@ -58,7 +58,7 @@
 				</li>
 
 				<li>
-					<a class="<?=($current === 'contacto') ? 'active' : ''?>" href="./">Contacto</a>
+					<a class="<?=($current === 'contacto') ? 'active' : ''?>" href="./contacto.php">Contacto</a>
 				</li>
 
 			</ul>
