@@ -53,9 +53,9 @@
 					<a class="<?=($current === 'arquitectos') ? 'active' : ''?>" href="./arquitectos.php">Arquitectos</a>
 				</li>
 
-				<li>
+				<!-- <li>
 					<a class="<?=($current === 'blog') ? 'active' : ''?>" href="./">Blog</a>
-				</li>
+				</li> -->
 
 				<li>
 					<a class="<?=($current === 'contacto') ? 'active' : ''?>" href="./contacto.php">Contacto</a>
