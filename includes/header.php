@@ -24,19 +24,19 @@
 					<span id="btn_menu_products" class="open">Productos<i id="arrow_product" class="fa-solid fa-angle-down"></i></span>
 					<ul id="content_products">
 						<li>
-							<a class="<?=($product === 'producto_1') ? 'open' : ''?>" href="#">NEW ELEGANS</a>
+							<a class="<?=($product === 'new_elegans') ? 'open' : ''?>" href="#">NEW ELEGANS</a>
 						</li>
 						<li>
-							<a class="<?=($product === 'producto_2') ? 'open' : ''?>" href="#">SLIDING 7400</a>
+							<a class="<?=($product === 'sliding_7400') ? 'open' : ''?>" href="#">SLIDING 7400</a>
 						</li>
 						<li>
-							<a class="<?=($product === 'producto_3') ? 'open' : ''?>" href="#">COMPACT</a>
+							<a class="<?=($product === 'compact') ? 'open' : ''?>" href="#">COMPACT</a>
 						</li>	
 						<li>
-							<a class="<?=($product === 'producto_4') ? 'open' : ''?>" href="#">INOVA</a>
+							<a class="<?=($product === 'inova') ? 'open' : ''?>" href="#">INOVA</a>
 						</li>
 						<li>
-							<a class="<?=($product === 'producto_5') ? 'open' : ''?>" href="#">HEBE SCHIEBE</a>
+							<a class="<?=($product === 'hebe_schiebe') ? 'open' : ''?>" href="./producto-hebe-schiebe.php">HEBE SCHIEBE</a>
 						</li>
 					</ul>
 				</li>
