@@ -1,0 +1,573 @@
+/* Título */
+.productos .titulo {
+	padding-left: calc(var(--bs-gutter-x) * .5);
+	padding-right: calc(var(--bs-gutter-x) * .5);
+	margin-bottom: 10px;
+}
+
+.productos .titulo h1 {
+	font-size: 2rem;
+	font-weight: 300;
+	color: var(--primary-color);
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.productos .titulo h2 {
+	font-size: 1.25rem;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 20px;
+}
+/* Título end */
+
+/* Caracteristicas */
+.productos .caracteristicas {
+	padding-left: calc(var(--bs-gutter-x) * .5);
+	padding-right: calc(var(--bs-gutter-x) * .5);
+	margin-bottom: 60px;
+}
+
+.productos .caracteristicas {
+	padding-left: calc(var(--bs-gutter-x) * .5);
+	padding-right: calc(var(--bs-gutter-x) * .5);
+}
+
+.productos .caracteristicas p:last-child {
+	margin-bottom: 0;
+}
+/* Caracteristicas end */
+
+/* Detalles */
+.productos .detalles {
+	margin-bottom: 60px;
+}
+
+.productos .detalles .iconos .content_iconos:nth-child(1) {
+	display: none;
+}
+
+.productos .detalles .iconos .content_iconos {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.productos .detalles .iconos .content_iconos img {
+	max-width: 85%;
+	margin-bottom: 5px;
+}
+
+.productos .detalles .iconos .content_iconos p {
+	margin-bottom: 0;
+	font-weight: 500;
+	font-size: 0.85rem;
+}
+
+.productos .detalles .prod_small {
+	margin-bottom: 20px;
+}
+
+.productos .detalles .prod_small .content_detalle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.productos .detalles .prod_small .content_detalle img {
+	max-width: 85%;
+	margin-bottom: 5px;
+}
+
+.productos .detalles .prod_small .content_detalle p {
+	margin-bottom: 0;
+	font-weight: 500;
+	font-size: 0.85rem;
+}
+
+.productos .detalles .prod_large {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.productos .detalles .prod_large img {
+	max-width: 85%;
+}
+/* Detalles end */
+
+/* Colores */
+.productos .colores {
+	margin-bottom: 20px;
+}
+
+.productos .colores .titulos {
+	margin-bottom: 20px;
+}
+
+.productos .colores .titulos h2 {
+	font-size: 2rem;
+	font-weight: 300;
+	color: var(--primary-color);
+	text-align: center;
+}
+
+.productos .colores .titulos h3 {
+	font-size: 1.25rem;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.productos .colores .content_colores {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+.productos .colores .content_colores img {
+	max-width: 30%;
+	margin-bottom: 15px;
+}
+/* Colores end */
+
+/* Sistemas */
+.productos .sistemas {
+	margin-bottom: 30px;
+}
+
+.productos .sistemas h2 {
+	font-size: 2rem;
+	font-weight: 300;
+	color: var(--primary-color);
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.productos .sistemas .content_sistemas {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+.productos .sistemas .content_sistemas .content_img {
+	margin-bottom: 18px;
+	position: relative;
+	text-align: center;
+}
+
+.productos .sistemas .content_sistemas .content_img p {
+	margin-bottom: 0;
+}
+
+.productos .sistemas .content_sistemas .content_img.active p {
+	color: var(--primary-color);
+	font-weight: 500;
+}
+/* Sistemas end */
+
+/* Ventajas Técnicas */
+.productos .ventajas {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.productos .ventajas h2 {
+	font-size: 2rem;
+	font-weight: 300;
+	color: var(--primary-color);
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.productos .ventajas .content_ventajas {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.productos .ventajas .content_ventajas .content_numeros {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.productos .ventajas .content_ventajas {
+  margin-bottom: 20px;
+  border: 1px solid var(--primary-color);
+	padding: 10px 5px;
+}
+
+.productos .ventajas .content_ventajas h4 {
+	font-size: 1rem;
+}
+
+.productos .ventajas .content_ventajas .content_numeros p {
+	margin-bottom: 0;
+	font-weight: 500;
+}
+
+.productos .ventajas .content_ventajas .content_numeros .numero {
+	color: var(--primary-color);
+	font-size: 2rem;
+}
+
+.productos .ventajas .content_ventajas .content_numeros .descripcion {
+	font-size: 0.85rem;
+	font-weight: 300;
+}
+
+.productos .ventajas .content_ventajas .content_numeros .content_ind {
+	line-height: 1.3;
+}
+/* Ventajas Técnicas end */
+
+/* Arquitectos & Distribuidores */
+.productos .arq_dist {
+	margin-bottom: 0;
+}
+/* Arquitectos & Distribuidores end */
+
+
+
+@media (min-width: 480px) {
+	/* Galería */
+	.productos .section_galeria .slick-slide {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	/* Galería end */
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+	/* Título */
+	.productos .titulo {
+		margin-bottom: 0;
+		border-bottom: solid 1px var(--primary-color);
+		padding-bottom: 0!important;
+	}
+
+	.productos .titulo h2 {
+		margin-bottom: 30px;
+	}
+
+	.productos .slide .horizontal {
+		bottom: 0;
+	}
+	/* Título end */
+
+	/* Slide */
+	.productos .slide {
+		padding-bottom: 3%;
+	}
+	/* Slide end */
+
+	/* Caracteristicas */
+	.productos .caracteristicas {
+		border-bottom: solid 1px var(--primary-color);
+		margin-bottom: 0;
+	}
+
+	.productos .caracteristicas .content_caracteristicas {
+		padding-left: 10%;
+		padding-top: 3%;
+	}
+	/* Caracteristicas end */
+
+	/* Detalles */
+	.productos .detalles {
+		border-bottom: solid 1px var(--primary-color);
+	}
+
+	.productos .detalles .iconos .content_iconos:nth-child(1) {
+		display: flex;
+		border-left: none;
+		border-right: none;
+	}
+
+	.productos .detalles .iconos .content_iconos:nth-child(2),
+	.productos .detalles .iconos .content_iconos:nth-child(3),
+	.productos .detalles .iconos .content_iconos:nth-child(4) {
+		border-left: none;
+	}
+
+	.productos .detalles .iconos .content_iconos {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-bottom: 0;
+		border-left: solid 1px var(--primary-color);
+		border-right: solid 1px var(--primary-color);
+		border-bottom: solid 1px var(--primary-color);
+	}
+
+	.productos .detalles .prod_small {
+		margin-bottom: 0;
+		border-right: solid 1px var(--primary-color);
+	}
+
+	.productos .detalles .prod_small .col-6 {
+		border-left: solid 1px var(--primary-color);
+		border-right: solid 1px var(--primary-color);
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.productos .detalles .prod_small .col-6:nth-child(1) {
+		border-left: none;
+	}
+
+	.productos .detalles .prod_small .col-6:nth-child(2) {
+		border-left: none;
+		border-right: none;
+	}
+
+	.productos .detalles .prod_small .col-6 .content_detalle img {
+		max-width: 100%;
+	}
+	/* Detalles end */
+
+	/* Colores */
+	.productos .colores {
+		margin-bottom: 60px;
+	}
+
+	.productos .colores .content_colores img {
+		max-width: 100%;
+	}
+
+	.productos .colores .content_colores:last-child {
+		margin-bottom: 0;
+	}
+	/* Colores end */
+
+	/* Sistemas	*/
+	.productos .sistemas {
+		border-bottom: solid 1px var(--primary-color);
+	}
+	/* Sistemas	end */
+
+	/* Ventajas Técnicas */
+	.productos .ventajas {
+		border-bottom: solid 1px var(--primary-color);
+		padding-bottom: 0;
+	}
+
+	.productos .ventajas .content_ventajas {
+		border: none;
+		margin-top: 20px;
+	}
+
+	.productos .ventajas .col-md-4 {
+		border-left: solid 1px var(--primary-color);
+		border-right: solid 1px var(--primary-color);
+	}
+
+	.productos .ventajas .col-md-4:nth-child(1),
+	.productos .ventajas .col-md-4:nth-child(2),
+	.productos .ventajas .col-md-4:nth-child(3) {
+		border-left: none;
+	}
+
+	.productos .ventajas .col-md-4:nth-child(3) {
+		border-right: none;
+	}
+
+	.productos .ventajas .content_ventajas h4 {
+		font-size: 1.25;
+		margin-bottom: 10px;
+	}
+
+	.productos .ventajas .content_ventajas .content_numeros .numero {
+		font-size: 1.75rem;
+	}
+
+	.productos .ventajas .content_ventajas .content_numeros .descripcion {
+		font-size: 0.75rem;
+	}
+	/* Ventajas Técnicas end */
+
+	/* Nuestros Sistemas */
+	.productos .nuestros_sistemas {
+		padding-top: 0;
+	}
+
+	.productos .nuestros_sistemas .horizontal {
+		display: none;
+	}
+	/* Nuestros Sistemas end */
+
+
+}
+
+@media (min-width: 992px) {	
+
+	/* Caracteristicas */
+	.productos .caracteristicas p {
+		font-size: 1.25rem;
+	}
+	/* Caracteristicas end */
+
+	/* Detalles	*/
+	.productos .detalles .iconos .content_iconos p {
+		font-size: 1rem;
+	}
+
+	.productos .detalles .prod_small .content_detalle p {
+		font-size: 1rem;
+	}
+	/* Detalles	end */
+
+	/* Colores */
+	.productos .colores .content_colores {
+		justify-content: center;
+	}
+
+	.productos .colores .content_colores img {
+		margin: 0 8px 15px 8px;
+	}
+	/* Colores end */
+
+	/* Ventajas Técnicas	*/
+	.productos .ventajas .content_ventajas .content_numeros .numero {
+		font-size: 2rem;
+	}
+
+	.productos .ventajas .content_ventajas .content_numeros .descripcion {
+		font-size: 0.85rem;
+	}
+	/* Ventajas Técnicas	end */
+
+}
+
+@media (min-width: 1200px) {
+
+	/* Títulos */
+	.productos .titulo h1 {
+		font-size: 3rem;
+	}
+
+	.productos .titulo h2 {
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+	/* Títulos end */
+
+	/* Colores */
+	.productos .colores .titulos h2 {
+		font-size: 3rem;
+	}
+
+	.productos .colores .titulos h3 {
+		font-size: 1.5rem;
+	}
+	/* Colores end */
+
+	/* Sistemas	*/
+	.productos .sistemas {
+		margin-bottom: 60px;
+	}
+
+	.productos .sistemas .content_sistemas {
+		max-width: 900px;
+		margin: auto;
+	}
+
+	.productos .sistemas h2 {
+		font-size: 3rem;
+	}
+	/* Sistemas	end */
+
+	/* Galeria */
+	.productos .section_galeria {
+		margin-bottom: 60px;
+	}
+	/* Galeria end */
+
+	/* Ventajas Técnicas */
+	.productos .ventajas {
+		margin-bottom: 60px;
+	}
+
+	.productos .ventajas h2 {
+		font-size: 3rem;
+		margin-bottom: 30px;
+	}
+
+	.productos .ventajas .content_ventajas {
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+
+	.productos .ventajas .content_ventajas h4 {
+		font-size: 1.25rem;
+	}
+
+	.productos .ventajas .content_ventajas .content_numeros .numero {
+		font-size: 2.25rem;
+	}
+
+	.productos .ventajas .content_ventajas .content_numeros .descripcion {
+		font-size: 1rem;
+	}
+	/* Ventajas Técnicas end */
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1600px) {
+
+	/* Colores */
+	.productos .colores .estandar {
+		max-width: 1150px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.productos .colores .content_colores img {
+		margin: 0 15px 30px 15px;
+	}
+	/* Colores end */
+
+	/* Sistemas */
+	.productos .sistemas {
+		padding-bottom: 30px;
+	}
+
+	.productos .sistemas .content_sistemas {
+		max-width: 1000px;
+	}
+	/* Sistemas end */
+
+	/* Ventajas */
+	.productos .ventajas .content_ventajas h4 {
+		margin-bottom: 25px;
+	}
+
+	.productos .ventajas .content_ventajas .content_numeros .numero {
+		font-size: 2.5rem;
+	}
+	/* Ventajas end */
+}

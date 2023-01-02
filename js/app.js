@@ -1,5 +1,6 @@
 import AOS from 'aos';
 import Swiper from './../node_modules/swiper/swiper-bundle.esm.browser.min.js';
+import { CountUp } from 'countup.js';
 
 const header = document.getElementsByTagName('header')[0]
 const nav = document.getElementsByTagName('nav')[0]
@@ -7,6 +8,34 @@ const toggle = document.getElementById('btn_menu')
 const btnMenuProducts = document.getElementById('btn_menu_products')
 const contentProducts = document.getElementById('content_products')
 const arrowProduct = document.getElementById('arrow_product')
+
+var url = window.location.pathname;
+var filename = url.substring(url.lastIndexOf('/')+1);
+
+if ( filename === 'producto-hebe-schiebe.php' ) { 
+
+  var options = { // opciones para objetos CountUp
+    useEasing: true, 
+    useGrouping: true, 
+    separator: '.', 
+    decimal: '.', 
+    enableScrollSpy: true, 
+    suffix: '%'
+  }
+
+  var acusticoA = new CountUp('acustico_a', 90, options);
+  var acusticoB = new CountUp('acustico_b', 30, options);
+  var acusticoC = new CountUp('acustico_c', 70, options);
+
+  var termicoA = new CountUp('termico_a', 90, options);
+  var termicoB = new CountUp('termico_b', 50, options);
+  var termicoC = new CountUp('termico_c', 90, options);
+
+  var extremoA = new CountUp('extremo_a', 90, options);
+  var extremoB = new CountUp('extremo_b', 70, options);
+  var extremoC = new CountUp('extremo_c', 70, options);
+  
+}
 
 var swiper = new Swiper(".swiper", {
   slidesPerView: 2,
@@ -112,9 +141,6 @@ function validateForm() {
   });
 }
 
-var url = window.location.pathname;
-var filename = url.substring(url.lastIndexOf('/')+1);
-
 // Carrusel Aspiracional Home
 function galleryHome(imgs) {
 
@@ -138,7 +164,8 @@ window.galleryHome = galleryHome; // hacemos la funcion global por webpack
 if ( 
   filename === '' || // Page especifica (String vacio = Home o raiz)
   filename === 'arquitectos.php' ||
-  filename === 'distribuidores.php'
+  filename === 'distribuidores.php' ||
+  filename === 'producto-hebe-schiebe.php'
   ) { 
   // Plugin Slick (Carrousel logos) Funcion
   $('.galeria').slick({
