@@ -12,7 +12,10 @@ const arrowProduct = document.getElementById('arrow_product')
 var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/')+1);
 
-if ( filename === 'producto-hebe-schiebe.php' ) { 
+if ( 
+  filename === 'producto-hebe-schiebe.php' ||
+  filename === 'producto-inova.php'
+  ) { 
 
   var options = { // opciones para objetos CountUp
     useEasing: true, 
@@ -165,7 +168,8 @@ if (
   filename === '' || // Page especifica (String vacio = Home o raiz)
   filename === 'arquitectos.php' ||
   filename === 'distribuidores.php' ||
-  filename === 'producto-hebe-schiebe.php'
+  filename === 'producto-hebe-schiebe.php' ||
+  filename === 'producto-inova.php'
   ) { 
   // Plugin Slick (Carrousel logos) Funcion
   $('.galeria').slick({

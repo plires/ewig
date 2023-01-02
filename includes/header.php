@@ -33,7 +33,7 @@
 							<a class="<?=($product === 'compact') ? 'open' : ''?>" href="#">COMPACT</a>
 						</li>	
 						<li>
-							<a class="<?=($product === 'inova') ? 'open' : ''?>" href="#">INOVA</a>
+							<a class="<?=($product === 'inova') ? 'open' : ''?>" href="./producto-inova.php">INOVA</a>
 						</li>
 						<li>
 							<a class="<?=($product === 'hebe_schiebe') ? 'open' : ''?>" href="./producto-hebe-schiebe.php">HEBE SCHIEBE</a>
