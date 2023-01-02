@@ -211,7 +211,7 @@
 							<img 
 								data-aos="fade-up"
 								onclick="galleryHome(this);" 
-								data-text="La calidad superior se percibe en la terminaciones perfectas. 02" 
+								data-text="Combinamos nuestros perfiles con los mejores herrajes del mercado." 
 								data-number="02"
 								class="img-fluid transition" 
 								src="./img/home/carrusel-producto/producto-b-small.jpg" 
@@ -223,7 +223,7 @@
 							<img 
 								data-aos="fade-up"
 								onclick="galleryHome(this);" 
-								data-text="La calidad superior se percibe en la terminaciones erior se percibe en la terminacione perfectas. 03" 
+								data-text="Disponemos de variados sistemas de apertura asegurando hermeticidad." 
 								data-number="03"
 								class="img-fluid transition" 
 								src="./img/home/carrusel-producto/producto-c-small.jpg" 
