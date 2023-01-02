@@ -30,7 +30,7 @@
 							<a class="<?=($product === 'sliding_7400') ? 'open' : ''?>" href="#">SLIDING 7400</a>
 						</li>
 						<li>
-							<a class="<?=($product === 'compact') ? 'open' : ''?>" href="#">COMPACT</a>
+							<a class="<?=($product === 'compact') ? 'open' : ''?>" href="./producto-compact.php">COMPACT</a>
 						</li>	
 						<li>
 							<a class="<?=($product === 'inova') ? 'open' : ''?>" href="./producto-inova.php">INOVA</a>
