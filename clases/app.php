@@ -188,22 +188,38 @@ use PHPMailer\PHPMailer\Exception;
         BASE 
       );
 
-      switch ($to) {
+      switch ( $post['origin'] ) {
+        case 'Formulario de Distribuidores':
+          array_push( $vars, '{zone_user}' );
+          array_push( $values, $post['zone'] );
 
-        case 'to_client':
-          $template = file_get_contents( __DIR__ . '/../includes/emails/contacts/contacts-to-client.php');
+          if ( $to === 'to_client') {
+            $template = file_get_contents( __DIR__ . '/../includes/emails/distribuidores/distribuidores-to-client.php');
+          } else {
+            $template = file_get_contents( __DIR__ . '/../includes/emails/distribuidores/distribuidores-to-user.php');
+          }
           break;
 
-        case 'to_user':
-          $template = file_get_contents( __DIR__ . '/../includes/emails/contacts/contacts-to-user.php');
+        case 'Formulario de Arquitectos':
+          array_push( $vars, '{company_user}' );
+          array_push( $values, $post['company'] );
+
+          if ( $to === 'to_client') {
+            $template = file_get_contents( __DIR__ . '/../includes/emails/arquitectos/arquitectos-to-client.php');
+          } else {
+            $template = file_get_contents( __DIR__ . '/../includes/emails/arquitectos/arquitectos-to-user.php');
+          }
           break;
         
         default:
-          $template = file_get_contents( __DIR__ . '/../includes/emails/contacts/contacts-to-client.php');
+          if ( $to === 'to_client') {
+            $template = file_get_contents( __DIR__ . '/../includes/emails/contacts/contacts-to-client.php');
+          } else {
+            $template = file_get_contents( __DIR__ . '/../includes/emails/contacts/contacts-to-user.php');
+          }
           break;
-
       }
-
+     
       //Remplazamos las variables por las marcas en los templates
       $template_final = str_replace($vars, $values, $template);
 

@@ -37,16 +37,16 @@
 	    $phone = $_POST['phone'];
 	  }
 
-	  if ( $app->emptyInput( $_POST['company']) && $current === 'arquitectos.php' ) {
+	  if ( $app->emptyInput( isset($_POST['company']) ) && $current === 'arquitectos.php' ) {
 	    $errors['error_company']='Ingresa tu empresa o razón social';
 	  } else {
-	    $company = $_POST['company'];
+	    $company = isset( $_POST['company'] );
 	  }
 
-	  if ( $app->emptyInput( $_POST['zone']) && $current === 'distribuidores.php' ) {
+	  if ( $app->emptyInput( isset($_POST['zone']) ) && $current === 'distribuidores.php' ) {
 	    $errors['error_zone']='Ingresa tu zaona de trabajo';
 	  } else {
-	    $zone = $_POST['zone'];
+	    $zone = isset( $_POST['zone'] );
 	  }
 
 	  if ($app->emptyInput( $_POST['comments'])) {
