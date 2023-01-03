@@ -159,8 +159,10 @@
 		padding-bottom: 40px;
 	}
 
-	.contacto .modulo_contacto .formulario .form-control, .contacto .modulo_contacto .formulario .invalid-feedback {
+	.contacto .modulo_contacto .formulario .form-control, .contacto .modulo_contacto .formulario .invalid-feedback,
+	.contacto .modulo_contacto .alert-success, .contacto .modulo_contacto .alert-danger {
 		width: 80%;
+		margin-left: 20%;
 	}
 	/* Formulario de Contacto end */
 
