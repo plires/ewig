@@ -309,11 +309,11 @@
         <!-- Cuerpo del Email : BEGIN -->
         <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto; background-color: #ffffff;" class="email-container">
 
-        <!-- Header-->
+          <!-- Header-->
           <tr>
               <td style="vertical-align: middle;">
                   
-                  <img src="https://vqz.net/img/email/header-email.jpg" style="margin:0; padding:0; border:none; display:block; width: 100%; height: auto;" border="0" alt="header" />
+                  <img src="{base}/img/email/header-email-red.gif" style="margin:0; padding:0; border:none; display:block; width: 100%; height: auto;" border="0" alt="header" />
 
               </td>
           </tr>
@@ -399,11 +399,11 @@
               <td align="center"  style="background-color: #FFFFFF;padding: 10px;">
                 
                 <a target="_blank" rel="noopener noreferrer" href="tel:{phone_client}">
-                  <img src="https://vqz.net/img/email/phone-14.png" style="margin:0; margin-right: 20px; padding:0; border:none; display:inline-block; width: 16px; height: auto;" border="0" alt="phone" />
+                  <img src="{base}img/email/phone-14.png" style="margin:0; margin-right: 20px; padding:0; border:none; display:inline-block; width: 16px; height: auto;" border="0" alt="phone" />
                 </a>
 
                 <a target="_blank" rel="noopener noreferrer" href="mailto:{email_client}">
-                  <img src="https://vqz.net/img/email/email-14.png" style="margin:0; margin-right: 0; padding:0; border:none; display:inline-block; width: 16px; height: auto;" border="0" alt="email" />
+                  <img src="{base}img/email/email-14.png" style="margin:0; margin-right: 0; padding:0; border:none; display:inline-block; width: 16px; height: auto;" border="0" alt="email" />
                 </a>
 
               </td>
