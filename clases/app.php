@@ -152,10 +152,8 @@ use PHPMailer\PHPMailer\Exception;
 
     }
 
-    function selectEmailTemplate($post, $to) 
-    {
+    function setVariablesForEmailTemplate($post) {
 
-      //configuro las variables a remplazar en el template
       $vars = array(
         '{name_client}',
         '{email_client}',
@@ -192,7 +190,28 @@ use PHPMailer\PHPMailer\Exception;
         case 'Formulario de Distribuidores':
           array_push( $vars, '{zone_user}' );
           array_push( $values, $post['zone'] );
+          break;
 
+        case 'Formulario de Arquitectos':
+          array_push( $vars, '{company_user}' );
+          array_push( $values, $post['company'] );
+      }
+
+      return array($vars, $values);
+
+    }
+
+    function selectEmailTemplate($post, $to) 
+    {
+
+      $variables_for_template_email = $this->setVariablesForEmailTemplate($post);
+
+      $vars = $variables_for_template_email[0];
+      $values = $variables_for_template_email[1];
+
+      switch ( $post['origin'] ) {
+        case 'Formulario de Distribuidores':
+          
           if ( $to === 'to_client') {
             $template = file_get_contents( __DIR__ . '/../includes/emails/distribuidores/distribuidores-to-client.php');
           } else {
@@ -201,8 +220,6 @@ use PHPMailer\PHPMailer\Exception;
           break;
 
         case 'Formulario de Arquitectos':
-          array_push( $vars, '{company_user}' );
-          array_push( $values, $post['company'] );
 
           if ( $to === 'to_client') {
             $template = file_get_contents( __DIR__ . '/../includes/emails/arquitectos/arquitectos-to-client.php');
