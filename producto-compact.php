@@ -160,7 +160,6 @@
 	<!-- Footer -->
 	<?php include_once('./includes/footer.php'); ?>
 
-	<script src="https://www.google.com/recaptcha/api.js?render=<?= $_ENV['RECAPTCHA_KEY_SITE'] ?>"></script>
 	<script src="./dist/bundle.js"></script>
 
 </body>
