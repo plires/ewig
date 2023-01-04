@@ -127,9 +127,9 @@
 			<div class="vertical"><i></i></div>
 			<div class="row">
 				<div data-aos="fade-up" class="col-md-9 offset-md-3">
-					El PVC-U es el material más utilizado para ventanas. <br>
-					Con una excelente relación calidad – precio y <br>
-					excelentes propiedades en cuanto a aislamiento, <br>
+					El PVC-U es el material más utilizado para ventanas, <br>
+					con una excelente relación precio - calidad. <br>
+					Sus excelentes propiedades en cuanto a aislamiento, <br>
 					confort y durabilidad hacen que sea la mejor opción.
 				</div>
 			</div>
@@ -199,7 +199,7 @@
 							<img 
 								data-aos="fade-up"
 								onclick="galleryHome(this);" 
-								data-text="La calidad superior se percibe en la terminaciones perfectas." 
+								data-text="La calidad superior se percibe en las terminaciones perfectas." 
 								data-number="01" 
 								class="img-fluid transition" 
 								src="./img/home/carrusel-producto/producto-a-small.jpg" 
