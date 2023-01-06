@@ -119,7 +119,7 @@
 							<div data-aos="fade-up" class='hytPlayerWrapOuter'>
 								<div class='hytPlayerWrap ratio ratio-16x9'>
 									<iframe 
-										src='https://www.youtube.com/embed/NQ7LYluGZrA?rel=0&enablejsapi=1'
+										src='https://www.youtube.com/embed/jQM6uLxfgLg?rel=0&enablejsapi=1'
 										frameborder='0' >
 									</iframe>
 								</div>
