@@ -199,7 +199,7 @@
 							<img 
 								data-aos="fade-up"
 								onclick="galleryHome(this);" 
-								data-text="La calidad superior se percibe en las terminaciones perfectas." 
+								data-text="Combinamos nuestros perfiles con los mejores herrajes del mercado." 
 								data-number="01" 
 								class="img-fluid transition" 
 								src="./img/home/carrusel-producto/producto-a-small.jpg" 
@@ -211,7 +211,7 @@
 							<img 
 								data-aos="fade-up"
 								onclick="galleryHome(this);" 
-								data-text="Combinamos nuestros perfiles con los mejores herrajes del mercado." 
+								data-text="Disponemos de variados sistemas de apertura asegurando hermeticidad." 
 								data-number="02"
 								class="img-fluid transition" 
 								src="./img/home/carrusel-producto/producto-b-small.jpg" 
@@ -223,7 +223,7 @@
 							<img 
 								data-aos="fade-up"
 								onclick="galleryHome(this);" 
-								data-text="Disponemos de variados sistemas de apertura asegurando hermeticidad." 
+								data-text="La calidad superior se percibe en las terminaciones perfectas." 
 								data-number="03"
 								class="img-fluid transition" 
 								src="./img/home/carrusel-producto/producto-c-small.jpg" 
